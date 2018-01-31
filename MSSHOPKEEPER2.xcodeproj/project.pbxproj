@@ -16,6 +16,8 @@
 		842C9C1D202008EB002ECB3E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C9C1C202008EB002ECB3E /* HomeVC.swift */; };
 		842C9C1F202008FA002ECB3E /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C9C1E202008FA002ECB3E /* SlideMenuVC.swift */; };
 		842C9C2420202F1E002ECB3E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C9C2320202F1E002ECB3E /* CustomCell.swift */; };
+		84D733F3202150F8005F8045 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D733F2202150F8005F8045 /* Data.swift */; };
+		84D733F820217D7A005F8045 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D733F720217D7A005F8045 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		842C9C1C202008EB002ECB3E /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		842C9C1E202008FA002ECB3E /* SlideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
 		842C9C2320202F1E002ECB3E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		84D733F2202150F8005F8045 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		84D733F720217D7A005F8045 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		842C9C0520200845002ECB3E /* MSSHOPKEEPER2 */ = {
 			isa = PBXGroup;
 			children = (
+				84D733F420217D3D005F8045 /* Model */,
 				842C9C2520203054002ECB3E /* Datasource */,
 				842C9C182020084F002ECB3E /* Supporting Files */,
 				842C9C2020200914002ECB3E /* Controller */,
@@ -71,7 +76,6 @@
 				842C9C0D20200845002ECB3E /* Assets.xcassets */,
 				842C9C0F20200845002ECB3E /* LaunchScreen.storyboard */,
 				842C9C1220200845002ECB3E /* Info.plist */,
-				842C9C2320202F1E002ECB3E /* CustomCell.swift */,
 			);
 			path = MSSHOPKEEPER2;
 			sourceTree = "<group>";
@@ -98,8 +102,18 @@
 		842C9C2520203054002ECB3E /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
+				842C9C2320202F1E002ECB3E /* CustomCell.swift */,
+				84D733F2202150F8005F8045 /* Data.swift */,
 			);
 			name = Datasource;
+			sourceTree = "<group>";
+		};
+		84D733F420217D3D005F8045 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84D733F720217D7A005F8045 /* Model.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D733F3202150F8005F8045 /* Data.swift in Sources */,
 				842C9C1F202008FA002ECB3E /* SlideMenuVC.swift in Sources */,
 				842C9C0920200845002ECB3E /* LoginVC.swift in Sources */,
 				842C9C1D202008EB002ECB3E /* HomeVC.swift in Sources */,
 				842C9C1B202008C6002ECB3E /* SlideMenuController.swift in Sources */,
 				842C9C2420202F1E002ECB3E /* CustomCell.swift in Sources */,
 				842C9C0720200845002ECB3E /* AppDelegate.swift in Sources */,
+				84D733F820217D7A005F8045 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +357,7 @@
 				842C9C1720200845002ECB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

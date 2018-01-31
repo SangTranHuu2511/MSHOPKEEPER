@@ -10,21 +10,12 @@ import UIKit
 
 class SlideMenuVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-
+    let model: [Model] = Data.loadData()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
 extension SlideMenuVC: UITableViewDataSource, UITableViewDelegate {
@@ -34,14 +25,14 @@ extension SlideMenuVC: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         
         }
+        cell.model = model[indexPath.row]
         
         return cell
         
-        
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-        
+        return model.count
     }
     
 }
