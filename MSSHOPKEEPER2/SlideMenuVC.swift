@@ -18,7 +18,7 @@ class SlideMenuVC: UIViewController {
     }
 }
 
-extension SlideMenuVC: UITableViewDataSource, UITableViewDelegate {
+extension SlideMenuVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? CustomCell else {
@@ -35,4 +35,19 @@ extension SlideMenuVC: UITableViewDataSource, UITableViewDelegate {
         return model.count
     }
     
+}
+
+extension SlideMenuVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == model.count - 1 {
+            let alert = UIAlertController(title: "", message: "Bạn có muốn đăng xuất khỏi ứng dụng?", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add the actions (buttons)
+            alert.addAction(UIAlertAction(title: "Log out ", style: UIAlertActionStyle.default, handler: {(alert: UIAlertAction!) in self.dismiss(animated: true, completion: nil)}))
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
+
+    }
 }
