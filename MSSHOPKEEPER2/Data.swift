@@ -8,13 +8,20 @@
 
 import UIKit
 class Data {
-    static func loadData() -> [Model] {
+    static func loadDataItemSlide() -> [ItemSlide] {
         return [
-            Model(name: "Giới thiệu cho bạn bè", image: UIImage(named: "ic_menu_share")!),
-            Model(name: "Đánh giá ứng dụng", image: UIImage(named: "ic_menu_rate")!),
-            Model(name: "Thông tin sản phẩm", image: UIImage(named: "ic_menu_about")!),
-            Model(name: "Thay đổi mật khẩu", image: UIImage(named: "ic_password_30dp")!),
-            Model(name: "Đăng xuất", image: UIImage(named: "ic_menu_logout")!),  
+            ItemSlide(name: "Giới thiệu cho bạn bè", image: UIImage(named: "ic_menu_share")!),
+            ItemSlide(name: "Đánh giá ứng dụng", image: UIImage(named: "ic_menu_rate")!),
+            ItemSlide(name: "Thông tin sản phẩm", image: UIImage(named: "ic_menu_about")!),
+            ItemSlide(name: "Thay đổi mật khẩu", image: UIImage(named: "ic_password_30dp")!),
+            ItemSlide(name: "Đăng xuất", image: UIImage(named: "ic_menu_logout")!),  
+        ]
+    }
+    
+    static func loadProducts() -> [Product] {
+        return [
+            
+            
         ]
     }
 }

@@ -20,6 +20,9 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passTextFeild: UITextField!
     @IBOutlet weak var userTextField: UITextField!
     
+    @IBOutlet weak var btnLogIn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         homeTextFeild.delegate = self
@@ -29,6 +32,9 @@ class LoginVC: UIViewController {
         passTextFeild.isSecureTextEntry = true
         loadConfigTextFeild()
         hideKeyboard()
+        btnLogIn.layer.masksToBounds = true
+        btnLogIn.layer.cornerRadius = 5
+        
         
         
         
@@ -53,7 +59,7 @@ class LoginVC: UIViewController {
     
     
     //MARK: action
-    @IBAction func onClickDangNhap(_ sender: Any) {
+    @IBAction func onClickLogIn(_ sender: Any) {
         let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC")
         let menuVC = storyboard?.instantiateViewController(withIdentifier: "SlideMenuVC")
         let slideMenu = SlideMenuController(mainViewController: homeVC!, leftMenuViewController: menuVC!)

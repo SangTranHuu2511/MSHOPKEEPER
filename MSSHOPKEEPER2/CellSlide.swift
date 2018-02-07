@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
+class CellSlide: UITableViewCell {
     
 
     @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var label: UILabel!
     
-    var model: Model? {
+    var model: ItemSlide? {
         didSet {
             imageIcon.image = model?.image
             label.text = model?.name
