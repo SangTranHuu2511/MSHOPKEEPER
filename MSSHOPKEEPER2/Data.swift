@@ -21,7 +21,13 @@ class Data {
     static func loadProducts() -> [Product] {
         return [
             
-            
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!),
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!),
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!),
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!),
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!),
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!),
+            Product(name: "logo", price: 230, image: UIImage(named: "logo")!)
         ]
     }
 }

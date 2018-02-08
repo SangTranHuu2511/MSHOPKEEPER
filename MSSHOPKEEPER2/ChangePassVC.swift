@@ -21,6 +21,10 @@ class ChangePassVC: UIViewController {
     @IBOutlet weak var labelNewPass: UILabel!
     @IBOutlet weak var labelConfirmPass: UILabel!
     
+    @IBOutlet weak var currentPassTF: UITextField!
+    @IBOutlet weak var newPassTF: UITextField!
+    @IBOutlet weak var confirmTF: UITextField!
+    
     
     
     override func viewDidLoad() {
@@ -31,6 +35,9 @@ class ChangePassVC: UIViewController {
         imageView.addGestureRecognizer(tapGestureRecognizer)
         btnChangePass.layer.masksToBounds = true
         btnChangePass.layer.cornerRadius = 5
+        newPassTF.delegate = self
+        confirmTF.delegate = self
+        currentPassTF.delegate = self
         
     }
     
@@ -40,5 +47,43 @@ class ChangePassVC: UIViewController {
         dismiss(animated: true, completion: nil)
         
     }
+    
+    @IBAction func changPass(_sender: UIButton) {
+        labelConfirmPass.isHidden = false
+        borderConfirmPass.backgroundColor = .red
+        labelConfirmPass.textColor = .red
+    }
+
+}
+extension ChangePassVC: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        if let _ = textField.viewWithTag(0) as? UITextField {
+
+        
+        }
+        if let _ = textField.viewWithTag(1) as? UITextField {
+            labelCurrentPass.isHidden = false
+            labelCurrentPass.textColor = .red
+            borderCurrentPass.backgroundColor = .red
+            
+            
+        }
+        if let _ = textField.viewWithTag(2) as? UITextField {
+            labelNewPass.isHidden = false
+            labelNewPass.textColor = .red
+            borderNewPass.backgroundColor = .red
+            
+
+            
+            
+        }
+
+        
+        
+    }
+    
+
 
 }

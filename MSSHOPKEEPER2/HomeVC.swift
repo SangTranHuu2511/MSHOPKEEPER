@@ -11,7 +11,7 @@ import UIKit
 class HomeVC: UIViewController {
     
     @IBOutlet weak var btnMenu: UIButton!
-
+    let products = Data.loadProducts()
     override func viewDidLoad() {
         super.viewDidLoad()
     }

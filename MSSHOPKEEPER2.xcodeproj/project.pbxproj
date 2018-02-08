@@ -21,6 +21,7 @@
 		84591896202A8D80003536F1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84591895202A8D80003536F1 /* Product.swift */; };
 		84D733F3202150F8005F8045 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D733F2202150F8005F8045 /* Data.swift */; };
 		84D733F820217D7A005F8045 /* ItemSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D733F720217D7A005F8045 /* ItemSlide.swift */; };
+		84D8B418202BE2960096532B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8B417202BE2960096532B /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		84591895202A8D80003536F1 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		84D733F2202150F8005F8045 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		84D733F720217D7A005F8045 /* ItemSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSlide.swift; sourceTree = "<group>"; };
+		84D8B417202BE2960096532B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				84D733F720217D7A005F8045 /* ItemSlide.swift */,
 				84591895202A8D80003536F1 /* Product.swift */,
+				84D8B417202BE2960096532B /* CustomButton.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				84591896202A8D80003536F1 /* Product.swift in Sources */,
 				843416AF2022B39500047042 /* InfomationVC.swift in Sources */,
 				842C9C2420202F1E002ECB3E /* CellSlide.swift in Sources */,
+				84D8B418202BE2960096532B /* CustomButton.swift in Sources */,
 				842C9C0720200845002ECB3E /* AppDelegate.swift in Sources */,
 				84D733F820217D7A005F8045 /* ItemSlide.swift in Sources */,
 				843416B12022B74300047042 /* ChangePassVC.swift in Sources */,
